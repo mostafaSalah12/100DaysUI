@@ -1,0 +1,119 @@
+body {
+  background-color: #e0e0e0;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.module {
+  width: 300px;
+  height: 473px;
+  /*background:
+    linear-gradient(rgba(30,0,75,0.75) 0%, rgba(0,0,0,1) 90%),
+    url(img/eiffel.jpg) center -50px no-repeat;*/
+  background:
+    radial-gradient(circle 900px at 420px 0px, rgba(30,0,75,0.75) 0%, rgba(0,0,0,1) 75%),
+    url(img/eiffel.jpg) center center no-repeat;;
+  background-size: 420px;
+
+  /* Center Horizontally and Vertically */
+  margin: auto;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+
+  /* Box Model */
+  padding: 60px 60px 10px 60px;
+
+  /* Additional Styles */
+  color: #fff;
+  box-shadow: 0px 50px 60px -15px rgba(0,0,0,1), 0px 30px 70px rgba(0,0,0,0.25);
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+a {
+  color: rgba(255,255,255,0.25);
+  margin-right: 30px;
+  padding: 5px 0;
+  border-bottom: 2px solid rgba(0,0,0,0);
+  text-decoration: none;
+}
+nav ul a.selected {
+  color: white;
+  border-bottom-color: #46f;
+}
+
+form {
+  margin: 80px 0;
+}
+label {
+  display: block;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  font-size: 10px;
+}
+label.indent {
+  padding-left: 15px;
+}
+label.checkbox {
+  color: white;
+  text-transform: none;
+}
+input {
+  display: block;
+  width: 270px;
+  height: 30px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(255,255,255,0.15);
+  padding: 0 15px;
+  color: white;
+}
+input.checkbox {
+  padding: 0;
+  margin: 15px 5px 20px 15px;
+  margin-left: 15px;
+  margin-right: 5px;
+  height: auto;
+}
+input.checkbox:active {
+  background-color: blue;
+}
+input:focus {
+  outline: none;
+}
+.noblock {
+  display: inline-block;
+  width: auto;
+}
+button {
+  display: block;
+  width: 300px;
+  border-radius: 15px;
+  height: 30px;
+  border: none;
+  background-color: #46f;
+  color: white;
+  text-transform: uppercase;
+}
+
+hr {
+  color: rgba(255,255,255,0.25);
+  border: 0.5px solid rgba(255,255,255,0.25);
+}
+
+.centeredLink {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-size: 10px;
+}
