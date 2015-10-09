@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  <link rel=stylesheet href=default.css>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,900' rel='stylesheet' type='text/css'>
+
+  <title>100 Days of UI | Day 2 - Product Card</title>
+</head>
+<body>
+
+  <section class="product-card">
+      <div class="product-display">
+        <h1>NOOK</h1>
+        <span class="subtitle">Lounge Chair</span>
+        <span class="pricetag">$320.00</span>
+        <img src="img/nook-lounge-chair.png" class="product-image">
+      </div>
+
+      <div class="product-info-pane">
+        <p class="product-info">
+          Designer Karim Rashid continues to put his signature spin on all genres of design through various collaborations with top-notch companies. Another one to add to the win colunmn is his work with Italian manufacturer Chateau d'Ax.
+        </p>
+        <p class="product-available">
+          In stock. <a class="addons-link" href="">Buy Extended warranty</a>
+        </p>
+        <p class="product-rating">
+          <i class="fa fa-star rating-star selected-star" id="star" onmouseover="highlightStar(1);" onclick="updateRating(1)" onmouseout="resetStars();"></i>
+          <i class="fa fa-star rating-star selected-star" id="star" onmouseover="highlightStar(2);" onclick="updateRating(2)" onmouseout="resetStars();"></i>
+          <i class="fa fa-star rating-star selected-star" id="star" onmouseover="highlightStar(3);" onclick="updateRating(3)" onmouseout="resetStars();"></i>
+          <i class="fa fa-star rating-star selected-star" id="star" onmouseover="highlightStar(4);" onclick="updateRating(4)" onmouseout="resetStars();"></i>
+          <i class="fa fa-star rating-star" id="star" onmouseover="highlightStar(5);" onclick="updateRating(5)" onmouseout="resetStars();"></i>
+          (<span id="avgRating"></span> - <span id="reviewCount"></span> reviews)
+        </p>
+
+        <!-- Quantity selector -->
+        <form class="quantity-selector">
+          <label>Quantity</label>
+          <div><i class="fa fa-chevron-left quantity-arrow" onclick="updateQuantity('-')"></i></div>
+          <label id="quantity-count">01</label>
+          <div><i class="fa fa-chevron-right quantity-arrow" onclick="updateQuantity('+')"></i></div>
+        </form>
+      </div>
+
+      <footer>
+        <div class="total">
+          <p>
+            TOTAL PRICE
+          </p>
+          <p id="total-price">
+            $320.00
+          </p>
+        </div>
+        <div class="checkout">
+          <a href="">Add to Cart</a>
+        </div>
+      </footer>
+  </section>
+
+
+
+</body>
+</html>

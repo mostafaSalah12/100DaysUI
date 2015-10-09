@@ -4,31 +4,29 @@ body {
   font-family: 'Ubuntu', sans-serif;
   letter-spacing: 1px;
   font-weight: 500;
+  min-width: 430px;
+  min-height: 700px;
 }
 
 .module {
   width: 300px;
   height: 473px;
-  /*background:
-    linear-gradient(rgba(30,0,75,0.75) 0%, rgba(0,0,0,1) 90%),
-    url(img/eiffel.jpg) center -50px no-repeat;*/
   background:
-    radial-gradient(circle 900px at 420px 0px, rgba(30,0,75,0.75) 0%, rgba(0,0,0,1) 75%),
+    radial-gradient(circle 700px at 380px -80px, rgba(0,0,75,0.75) 0%, rgba(0,0,0,1) 100%),
     url(img/eiffel.jpg) center center no-repeat;;
   background-size: 420px;
 
   /* Center Horizontally and Vertically */
   margin: auto;
   position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
+  top: 100px;
 
   /* Box Model */
   padding: 60px 60px 10px 60px;
 
   /* Additional Styles */
   color: #fff;
-  box-shadow: 0px 50px 60px -15px rgba(0,0,0,1), 0px 30px 70px rgba(0,0,0,0.25);
+  box-shadow: 0px 50px 30px -40px rgba(0,0,0,0.9), 0px 50px 70px rgba(0,0,0,0.75);
 }
 
 nav ul {
@@ -48,7 +46,7 @@ a {
 }
 nav ul a.selected {
   color: white;
-  border-bottom-color: #46f;
+  border-bottom-color: #23f;
 }
 
 form {
@@ -98,12 +96,15 @@ input:focus {
 button {
   display: block;
   width: 300px;
-  border-radius: 15px;
   height: 30px;
+  border-radius: 15px;
   border: none;
-  background-color: #46f;
+  background-color: #23f;
   color: white;
   text-transform: uppercase;
+}
+button:hover {
+  cursor: pointer;
 }
 
 hr {
@@ -116,4 +117,7 @@ hr {
   margin-top: 35px;
   margin-bottom: 35px;
   font-size: 10px;
+}
+[type=checkbox]:hover {
+  cursor: pointer;
 }

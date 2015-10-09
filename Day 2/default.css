@@ -1,0 +1,153 @@
+body {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 400;
+  background-color: #666;
+}
+
+.product-card {
+  width: 775px;
+  height: 625px;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  box-shadow: 0 35px 50px rgba(0,0,0,0.75), 0 0 50px rgba(0,0,0,0.5);
+}
+
+.product-content {
+  margin: 10px 0 10px 10px;
+  padding: 50px 0 0 50px;
+  position: relative;
+}
+.product-display {
+  /*display: inline-block;*/
+  width: 350px;
+  height: 483px;
+  padding: 50px 25px 0 50px;
+}
+.product-info-pane {
+  /*display: inline-block;*/
+  width: 280px;
+  height: 483px;
+  padding: 50px 50px 0 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.product-image {
+  max-width: 300px;
+  max-height: 300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.product-info {
+  padding: 0;
+  margin-top: 15px;
+  color: #aaa;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+p {
+  margin-bottom: 20px;
+}
+.subtitle {
+  display: block;
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 42px;
+}
+.pricetag {
+  display: block;
+  color: #000;
+  font-size: 30px;
+}
+.addons-link {
+  color: #5af;
+  text-decoration: none;
+}
+.product-rating {
+  color: #aaa;
+  margin-top: 40px;
+}
+.rating-star {
+  cursor: pointer;
+}
+.selected-star {
+  color: #fc8;
+}
+
+form {
+  margin-top: 50px;
+}
+.quantity-selector label,
+.quantity-selector input,
+.quantity-selector div {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.quantity-selector div,
+#quantity-count {
+  text-align: center;
+}
+.quantity-selector div {
+  width: 65px;
+  color: #ddd;
+  font-size: 20px;
+  transform: translateY(10%);
+}
+#quantity-count {
+  width: 55px;
+  color: #aaa;
+  font-size: 30px;
+  transform: translateY(12%);
+}
+.quantity-arrow {
+  cursor: pointer;
+}
+
+/* Footer */
+.product-card footer {
+  margin: 0 0 0 50px;
+  padding: 0px 50px 0px 0;
+  border-top: 1px solid #ddd;
+}
+
+.product-card footer div {
+  display: table-cell;
+  width: 338px;
+  height: 90px;
+  min-height: 72px;
+  max-height: 72px;
+  padding: none;
+  margin: none;
+  vertical-align: middle;
+}
+.total {
+  font-size: 14px;
+}
+.total p {
+  margin: 5px 0;
+}
+.checkout {
+  text-align: right;
+}
+.checkout a,
+#total-price {
+  font-size: 30px;
+  text-decoration: none;
+  color: #bc7;
+}
+a,
+a:hover {
+  text-decoration: underline;
+}
