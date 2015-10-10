@@ -23,7 +23,8 @@ body {
   /*display: inline-block;*/
   width: 350px;
   height: 483px;
-  padding: 50px 25px 0 50px;
+  padding: 40px 25px 0 50px;
+  position: relative;
 }
 .product-info-pane {
   /*display: inline-block;*/
@@ -34,12 +35,19 @@ body {
   top: 0;
   right: 0;
 }
+#brandName,
+#productName,
+#pricetag {
+  z-index: 100;
+}
 .product-image {
-  max-width: 300px;
-  max-height: 300px;
-  position: relative;
+  max-width: 350px;
+  max-height: 290px;
+  position: absolute;
   left: 50%;
+  bottom: 10px;
   transform: translateX(-50%);
+  z-index: 0;
 }
 .product-info {
   padding: 0;
@@ -50,7 +58,6 @@ body {
 
 h1 {
   font-weight: 800;
-  text-transform: uppercase;
   color: #000;
   font-size: 100px;
   margin: 0;
@@ -60,13 +67,12 @@ h1 {
 p {
   margin-bottom: 20px;
 }
-.subtitle {
+#productName {
   display: block;
-  text-transform: uppercase;
   color: #aaa;
   font-size: 42px;
 }
-.pricetag {
+#pricetag {
   display: block;
   color: #000;
   font-size: 30px;
@@ -79,31 +85,30 @@ p {
   color: #aaa;
   margin-top: 40px;
 }
-.rating-star {
-  cursor: pointer;
-}
 .selected-star {
   color: #fc8;
 }
 
-form {
+div.quantity-selector {
   margin-top: 50px;
 }
 .quantity-selector label,
 .quantity-selector input,
-.quantity-selector div {
+.quantity-selector button {
   display: inline-block;
   text-transform: uppercase;
 }
-.quantity-selector div,
+.quantity-selector button,
 #quantity-count {
   text-align: center;
 }
-.quantity-selector div {
+.quantity-selector button {
   width: 65px;
   color: #ddd;
   font-size: 20px;
   transform: translateY(10%);
+  border: none;
+  background-color: inherit;
 }
 #quantity-count {
   width: 55px;
@@ -113,6 +118,10 @@ form {
 }
 .quantity-arrow {
   cursor: pointer;
+  color: #000;
+}
+.disabled-arrow {
+  color: #ddd;
 }
 
 /* Footer */
@@ -150,4 +159,23 @@ form {
 a,
 a:hover {
   text-decoration: underline;
+}
+
+.back-arrow {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  padding: 5px 15px 15px 5px;
+
+  background: linear-gradient(135deg, #bc7 50%, rgba(0,0,0,0) 50%);
+  color: #fff;
+
+  /*cursor: pointer;*/
+  z-index: 100;
+}
+.product-not-available {
+  color: red;
 }
