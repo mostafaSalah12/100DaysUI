@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  <link rel=stylesheet href=default.css>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Gafata' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  <div class="phoneapp">
+    <section class="contacts">
+      <ul>
+        <li class="contact">
+          <img class="contact-img" src="img/contact1.png">
+          <span class="contact-name">Albert Einstein</span><br>
+          <span class="contact-number">+01 9963 256 2353</span>
+        </li>
+        <li class="contact">
+          <img class="contact-img" src="img/contact2.png">
+          <span class="contact-name">John Doe</span><br>
+          <span class="contact-number">+01 1835 987 6235</span>
+        </li>
+        <li class="contact">
+          <img class="contact-img" src="img/contact3.png">
+          <span class="contact-name">Jane Doe</span><br>
+          <span class="contact-number">+01 1273 946 0234</span>
+        </li>
+      </ul>
+    </section>
+    <section class="dialer">
+      <header>
+          <button class="addBtn" onclick="addNumber();">+</button>
+          <span class="dialed-number">
+            0742
+          </span>
+          <button class="cancelBtn" onclick="removeLastDigit();">&times;</button>
+      </header>
+      <button class="dialerBtn"><span class="dialerDigit">1</span><br><span class="dialerLetters">&nbsp;</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">2</span><br><span class="dialerLetters">ABC</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">3</span><br><span class="dialerLetters">DEF</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">4</span><br><span class="dialerLetters">GHI</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">5</span><br><span class="dialerLetters">JKL</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">6</span><br><span class="dialerLetters">MNO</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">7</span><br><span class="dialerLetters">PQRS</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">8</span><br><span class="dialerLetters">TUV</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">9</span><br><span class="dialerLetters">WXYZ</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">*</span><br><span class="dialerLetters">&nbsp;</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">0</span><br><span class="dialerLetters">+</span></button>
+      <button class="dialerBtn"><span class="dialerDigit">#</span><br><span class="dialerLetters">&nbsp;</span></button>
+      <button class="callBtn"><i class="fa fa-phone"></i></button>
+    </section>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>

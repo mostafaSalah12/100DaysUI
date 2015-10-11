@@ -1,0 +1,130 @@
+body {
+   background-color: rgb(95, 59, 148);
+   font-family: 'Source Sans Pro', sans-serif;
+}
+.phoneapp {
+  width: 820px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  background-color: transparent;
+}
+.contacts {
+  width: 380px;
+  height: 680px;
+  margin: 10px 0 10px 0;
+  float: left;
+
+  box-shadow: 60px 60px 90px black;
+  background: linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.7) 90px);
+}
+.dialer {
+  width: 440px;
+  height: 700px;
+  background-color: #fff;
+  vertical-align: top;
+  float: left;
+  box-shadow: 20px 60px 90px 0px black;
+}
+.dialer-letters {
+  font-family: 'Gafata', sans-serif;
+  text-transform: uppercase;
+  color: #bbb;
+}
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li.contact {
+  width: 340px;
+  height: 80px;
+  margin: 20px;
+  background-color: white;
+  list-style: none;
+  position: relative;
+}
+.contact-img {
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 10px;
+  background-color: #000;
+}
+.contact-name {
+  font-weight: 600;
+
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+}
+.contact-number {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  color: #bbb;
+  font-size: 18px;
+}
+
+.dialer {
+  text-align: center;
+}
+.dialer header {
+  margin: 20px 30px 20px 30px;
+  width: 385px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.dialer header button {
+  position: absolute;
+  top: 17px;
+  font-size: 25px;
+  color: #bbb;
+}
+.dialer button {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  line-height: 0.6em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+button:hover {
+  cursor: pointer;
+}
+.addBtn {
+  left: 10px;
+}
+.cancelBtn {
+  right: 10px;
+}
+.number-display {
+  width: 293px;
+}
+.dialed-number {
+  color: rgb(61, 195, 21);
+  font-size: 45px;
+}
+.dialerBtn {
+  font-size: 50px;
+  color: #444;
+  width: 120px;
+  height: 95px;
+  margin: 10px;
+  font-weight: 400;
+}
+.callBtn {
+  font-size: 70px;
+  color: rgb(61, 195, 21);
+  width: 405px;
+  height: 120px;
+}
+.dialerLetters {
+  font-family: 'Gafata', sans-serif;
+  font-size: 17px;
+  color: #bbb;
+  line-height: 15px;
+}
