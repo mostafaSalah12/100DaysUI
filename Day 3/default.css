@@ -15,6 +15,7 @@ body {
   height: 680px;
   margin: 10px 0 10px 0;
   float: left;
+  overflow-y: auto;
 
   box-shadow: 60px 60px 90px black;
   background: linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.7) 90px);
@@ -91,6 +92,7 @@ li.contact {
   border: none;
   line-height: 0.6em;
   font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
 }
 button:hover {
   cursor: pointer;
