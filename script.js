@@ -10,7 +10,7 @@ var uis = [
   },
   {
     name: "Checkout Credit Card UI",
-    original: "https://dribbble.com/shots/2131063-Day-004-Credit-Card-Payment/attachments/388585"
+    original: "https://dribbble.com/shots/2131063-Day-004-Credit-Card-Payment"
   }
 ];
 

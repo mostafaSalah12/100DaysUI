@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(rgba(0,10,20, 0.8), rgba(0,10,20, 0.8)), url(img/bg.jpg) center center fixed;
+  background-size: cover;
+  background-color: rgb(59,66,78);
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+}
+* {
+  position: relative;
+}
+
+.payment-card {
+  width: 850px;
+  height: 530px;
+  position: relative;
+  top: 147px;
+  margin: auto;
+  background-color: rgb(255,255,255);
+  border-radius: 33px;
+}
+.payment-card header {
+  padding: 35px;
+  border-radius: 30px 30px 0 0;
+  color: white;
+  background-color: rgb(9,104,247);
+}
+.payment-card header h1 {
+  line-height: 1em;
+  width: 200px;
+  font-size: 30px;
+}
+.cardtype {
+  position: absolute;
+  top: 48px;
+  right: 38px;
+  font-size: 72px;
+  line-height: 1em;
+}
+.card-credentials {
+  margin: 30px 40px;
+  height: 270px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.half-width {
+  display: inline-block;
+  width: 47%;
+  padding: 10px;
+  clear: none;
+}
+.third-width {
+  display: inline-block;
+  width: 30%;
+  margin-top: 22px;
+  padding: 10px;
+  clear: none;
+}
+.half-width input {
+  width: 327px;
+}
+.third-width input {
+  width: 197px;
+}
+.card-credentials label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbb;
+  display: block;
+  margin: 0 0 15px 0;
+}
+.card-credentials input {
+  border: 2.3px solid #bbb;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+.card-credentials input:focus {
+  border: 2.3px solid #8be;
+}
+.card-credentials select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  height: 65px;
+  width: 100%;
+
+  background: transparent;
+  border: 2.3px solid #bbb;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+.select::after {
+  content: '\f078';
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  color: #bbb;
+}
+select:focus, input:focus {
+  outline: none;
+}
+button.submit {
+  position: absolute;
+  right: 0;
+  font-size: 17px;
+  color: white;
+  top: 546px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid rgb(9,104,247);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
