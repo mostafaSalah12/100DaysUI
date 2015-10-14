@@ -1,0 +1,52 @@
+body {
+  background-color: #369;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.musicapp {
+  margin: auto;
+  margin-top: 30px;
+  width: 500px;
+  box-shadow: 0 10px 30px black;
+  position: relative;
+}
+.cover {
+  width: 500px;
+  height: 500px;
+}
+.playpause {
+  color: rgba(0,0,0,0);
+  text-align: center;
+  font-size: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  transition: all 0.25s ease;
+}
+.playpause:hover {
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+.playpause p {
+  top: 50%;
+  transform: translateY(-25%);
+}
+.musicplayer {
+  background-color: #123;
+  color: #fff;
+  margin: -4px 0 0 0;
+  padding: 25px;
+}
+.progressbar {
+  background: linear-gradient(90deg, #aa0 45%, rgba(255,255,255,0.15) 45%);
+  width: 450px;
+  height: 3px;
+}
+.totaltime {
+  float: right;
+}
+.hide {
+  display: none;
+}

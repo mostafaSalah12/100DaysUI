@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel=stylesheet href=default.css>
+
+  <title>100 Days of UI | Day 5 - Music App</title>
+
+</head>
+<body>
+
+  <div class="musicapp" id="album">
+    <img class="cover" src="onerepublic-native.jpg">
+    <div class="playpause" onclick="toggleplayback();">
+      <p><i class="fa fa-pause hide"></i><i class="fa fa-play"></i></p>
+    </div>
+    <div class="musicplayer">
+      <p class="totaltime">4:23</p>
+      <p class="progresstime">1:57</p>
+      <div class="progressbar"></div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
